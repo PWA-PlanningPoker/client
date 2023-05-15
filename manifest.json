@@ -1,0 +1,9 @@
+{
+  "name": "Quizzz",
+  "short_name": "Quizzz",
+  "theme_color": "#6a6a6a",
+  "background_color": "#c4c4c4",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "."
+}
