@@ -8,15 +8,15 @@
   "parserOptions": {
     "parser": "@typescript-eslint/parser"
   },
-  "plugins": [
-    "@typescript-eslint"
-  ],
+  "plugins": ["@typescript-eslint"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:vue/vue3-recommended"
+    "plugin:vue/vue3-recommended",
+    "plugin:prettier/recommended"
   ],
   "overrides": [],
   "rules": {
+    "prettier/prettier": "error"
   }
 }
