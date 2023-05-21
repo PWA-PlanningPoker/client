@@ -17,6 +17,12 @@
   ],
   "overrides": [],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "vue/component-tags-order": [
+      "error",
+      {
+        "order": ["template", "script", "style"]
+      }
+    ]
   }
 }
