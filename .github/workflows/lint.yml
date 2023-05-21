@@ -19,7 +19,7 @@ jobs:
       - name: Install yarn
         uses: borales/actions-yarn@v4
         with:
-          cmd: install
+          cmd: install --frozen-lockfile
       - name: Run linter
         run: yarn run lint
 
