@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "lint": "eslint --ext ts,vue src/",
-    "prettier": "prettier --check src/",
+    "check:format": "prettier src/ --list-different",
     "format": "prettier --write ./src",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
