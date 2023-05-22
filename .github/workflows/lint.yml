@@ -28,7 +28,7 @@ jobs:
           cmd: install --frozen-lockfile --prefer-offline
       - name: Run Prettier
         run: yarn run check:format
-  lint:
+  eslint:
     runs-on: ubuntu-latest
     container:
       image: node:14
