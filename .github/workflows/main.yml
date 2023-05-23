@@ -1,6 +1,18 @@
 name: Main Workflow
-on: [push]
 
-includes:
-  - path: .github/workflows/lint.yml
-  - path: .github/workflows/ts.yml
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ts-check:
+    needs: []
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./ts.yml
+  lint:
+    needs: [ts-check]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./lint.yml
