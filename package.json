@@ -7,6 +7,7 @@
     "dev": "vite",
     "lint": "eslint --ext ts,vue src/",
     "check:format": "prettier src/ --list-different",
+    "check:types": "vue-tsc --noEmit",
     "format": "prettier --write ./src",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
