@@ -10,9 +10,11 @@ jobs:
     needs: []
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - uses: ./ts.yml
   lint:
     needs: [ts-check]
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - uses: ./lint.yml
