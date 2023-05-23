@@ -4,9 +4,6 @@ on:
     branches:
       - main
 
-jobs:
-  runs-on: ubuntu-latest
-  type-checks:
-    uses: ./ts.yml
-  lint:
-    uses: ./lint.yml
+includes:
+  - path: .github/workflows/lint-job.yml
+  - path: .github/workflows/ts-check-job.yml
