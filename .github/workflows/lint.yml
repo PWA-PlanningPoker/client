@@ -1,5 +1,10 @@
 name: Lint
 
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   check-format:
     runs-on: ubuntu-latest
