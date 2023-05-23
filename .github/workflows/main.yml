@@ -5,5 +5,5 @@ on:
       - main
 
 includes:
-  - path: .github/workflows/lint-job.yml
-  - path: .github/workflows/ts-check-job.yml
+  - path: .github/workflows/lint.yml
+  - path: .github/workflows/ts.yml
