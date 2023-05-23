@@ -1,0 +1,5 @@
+jobs:
+  type-checks:
+    uses: ./ts.yml
+  lint:
+    uses: ./lint.yml
