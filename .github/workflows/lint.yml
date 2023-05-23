@@ -33,13 +33,16 @@ jobs:
 
   eslint:
     runs-on: ubuntu-latest
-    container:
-      image: node:14
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: v16.14.2
+
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
+
       - uses: actions/cache@v3
         id: yarn-cache
         with:
@@ -47,9 +50,5 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
-      - name: Install yarn and dependencies
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install --frozen-lockfile --prefer-offline
       - name: Run Eslint
         run: yarn run lint
