@@ -1,10 +1,5 @@
 name: TS Check
 
-on:
-  push:
-    branches:
-      - main
-
 jobs:
   check-types:
     runs-on: ubuntu-latest
