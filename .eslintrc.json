@@ -19,6 +19,7 @@
   ],
   "overrides": [],
   "rules": {
+    "no-unused-vars": "warn",
     "prettier/prettier": "error",
     "vue/component-tags-order": [
       "error",
