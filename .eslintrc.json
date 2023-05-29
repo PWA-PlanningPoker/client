@@ -26,6 +26,19 @@
       {
         "order": ["template", "script", "style"]
       }
+    ],
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "types": {
+          "Object": {
+            "message": "Avoid using the `Object` type. Did you mean `object`?"
+          },
+          "{}": {
+            "message": "Avoid using `{}` as a type. Prefer a more specific type like `unknown`, or use a type annotation."
+          }
+        }
+      }
     ]
   }
 }
