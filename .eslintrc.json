@@ -21,6 +21,8 @@
   "ignorePatterns": ["vite.config.js"],
   "rules": {
     "@typescript-eslint/no-mixed-enums": "error",
+    "@typescript-eslint/no-duplicate-enum-values": "error",
+    "@typescript-eslint/prefer-enum-initializers": "error",
     "@typescript-eslint/no-unused-vars": "warn",
     "prettier/prettier": "error",
     "vue/component-tags-order": [
