@@ -20,6 +20,7 @@
   "overrides": [],
   "ignorePatterns": ["vite.config.js"],
   "rules": {
+    "@typescript-eslint/no-mixed-enums": "error",
     "@typescript-eslint/no-unused-vars": "warn",
     "prettier/prettier": "error",
     "vue/component-tags-order": [
