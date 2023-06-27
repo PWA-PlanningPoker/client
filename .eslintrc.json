@@ -20,6 +20,7 @@
   "overrides": [],
   "ignorePatterns": ["vite.config.js"],
   "rules": {
+    "no-invalid-this": "error",
     "@typescript-eslint/no-mixed-enums": "error",
     "@typescript-eslint/no-duplicate-enum-values": "error",
     "@typescript-eslint/prefer-enum-initializers": "error",
